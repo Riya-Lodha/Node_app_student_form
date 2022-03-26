@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <style></style>
+        <title class="solid"> Registration Form</title>
+    </head>
+
+
+    <!-- onsubmit="return validateForm()" -->
+    <body  style="background-color:lightgrey">
+        <a href="./starting">Home</a>
+        <h1 style="text-align:center" > Registration Form</h1>
+        <form name="myForm"  align="center" style="color: purple"  method="post" action="/register">  
+            <!-- (Put label for instead of p) -->
+            <label for="namee"> Name: <input type="text" placeholder="Enter Full name" ></label>
+            <br><br>
+            <label for="fathername"> Father's Name: <input type="text" placeholder="Enter Father's name"  ></label>
+            <br><br>
+            <label for="mothername"> Mother's Name: <input type="text" placeholder="Enter Mother's name"  ></label>
+            <br><br>
+            <label for="phno"> Phone Number: <input type="text" placeholder="Enter Phone no."  minlength="10" title="Enter Valid Phone Number" pattern="^[0-9]{10}$" ></label>
+            <br><br>
+            <label for="em"> Email: <input type="email" placeholder="Enter email address" ></label>
+            <p> Gender: <label for="rdgender"><input type="radio" name="rdgender" id="rdgender">Male</label>
+                <label for="rdgender1"><input type="radio" name="rdgender" id="rdgender1">Female</label>
+                <label for="rdgender2"><input type="radio" name="rdgender" id="rdgender2">Other</label>
+            </p>
+            <label for="dte"> Date Of Birth: <input type="date" ></label>
+            <br><br>
+            <label for="add"> Address: <input type="text" ></label>
+            <br><br>
+            <label for="pc">Pincode:<input type="text" placeholder="Enter Pincode" pattern="^[0-9]{6}$" title="Enter Valid Pin Code">   ></label>
+            <br><br>
+            <label for="bg">Blood Group:</label>
+                <select name="bg" id="bg">
+                    <option>A Positive</option>
+                    <option>A Negative</option>
+                    <option>A Unknown</option>
+                    <option>B Positive</option>
+                    <option>B Negative</option>
+                    <option>B Unknown</option>
+                    <option>AB Positive</option>
+                    <option>AB Negative</option>
+                    <option>AB Unknown</option>
+                    <option>O Positive</option>
+                    <option>O Negative</option>
+                    <option>O Unknown</option>
+                    <option>Unknown</option>
+                </select>
+
+
+
+
+            <p> Department: <label for="rdd"><input type="radio" name="rdd" id="rdd">CSE</label>
+                <label for="rdd1"><input type="radio" name="rdd" id="rdd1">CCE</label>
+                <label for="rdd2"><input type="radio" name="rdd" id="rdd2">ECE</label>
+            
+            </p>
+
+            <p> Course: <label for="chk1"><input type="checkbox" name="chk1" id="chk1">C</label>
+                <label for="chk2"><input type="checkbox" name="chk1" id="chk2">C++</label>
+                <label for="chk3"><input type="checkbox" name="chk1" id="chk3">Java</label>
+                <label for="chk4"><input type="checkbox" name="chk1" id="chk4">AI</label>
+                <label for="chk5"><input type="checkbox" name="chk1" id="chk5">Machine Language</label>
+                <label for="chk6"><input type="checkbox" name="chk1" id="chk6">AWS</label>
+
+
+            </p>
+
+            
+
+            <table border="1" align="center" style="color: purple">
+                <tr>
+                    <td>
+                        Class
+                    </td>
+                    <td>
+                        Year of Passing
+                    </td>
+                    <td>
+                        Percentage
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        Class X
+                    </td>
+                    <td>
+                        <input type="text"  pattern="^[0-9]{4}$" >
+                    </td>
+                    <td>
+                        <input type="text"   >
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        Class XII
+                    </td>
+                    <td>
+                        <input type="text"   pattern="^[0-9]{4}$">
+                    </td>
+                    <td>
+                        <input type="text"   >
+                    </td>
+                </tr>
+        
+                <!-- <tr>
+                    <td>
+                        col1
+                    </td>
+                    <td>
+                        col2
+                    </td>
+                    <td>
+                        col3
+                    </td>
+                </tr> -->
+            </table>
+        
+            <br>
+            <button type="submit">Create Profile</button>
+
+
+        </form>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
